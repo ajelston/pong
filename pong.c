@@ -69,7 +69,7 @@ bool intersect(game* game, paddle* paddle)
     }
     // Need to find the ball's y position when it's x would match
     // the paddle.
-    int delta_y = (int) round(ball->y_velo / ball->x_velo);
+    int delta_y = (int) round((double) ball->y_velo / ball->x_velo);
     int y_at_paddle = ball->y + delta_y;
     int next_x = ball->x + ball->x_velo;
 
